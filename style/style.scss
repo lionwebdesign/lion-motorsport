@@ -8,7 +8,7 @@ $color-quinario: #ffffff; //Titulos en general
 
 $header: black; // Color del header
 $header-texto: $color-secundario; //Color del texto del header
-$header-texto-hover: $color-terceario;//darken($header-texto, 15%);
+$header-texto-hover: $color-terceario; //darken($header-texto, 15%);
 
 //caracteristicas del footer
 
@@ -77,25 +77,30 @@ body {
 
   .navbar-fixed {
     position: relative;
-    height: 63px;
+    height: 100px;
     z-index: 998;
 
     nav {
       background-color: $header;
       box-shadow: none;
+      height: 100px;
       a.brand-logo {
         max-width: 308px;
         height: auto;
         img.img-logo {
-          max-height: 60px;
+          max-height: 100%; //60px;
         }
       }
       ul {
         li {
           a {
+            height: 100px;
             color: $header-texto;
+            padding-top: 20px;
+            padding-bottom: 25px;
             &:hover {
               color: $header-texto-hover;
+              background-color: unset;
             }
           }
         }
