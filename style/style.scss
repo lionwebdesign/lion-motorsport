@@ -1,0 +1,166 @@
+$color-primario: #5b5b5b; //Color más oscuro de la paleta
+$color-secundario: #aeaeae; //CTA's
+$color-terceario: #ffceea; //Hover
+$color-cuaternario: #efefef; //Color de resalte sobre fondos oscuros
+$color-quinario: #ffffff; //Titulos en general
+
+//caracteristicas del header
+
+$header: black; // Color del header
+$header-texto: $color-secundario; //Color del texto del header
+$header-texto-hover: $color-terceario;//darken($header-texto, 15%);
+
+//caracteristicas del footer
+
+$footer: $color-primario;
+$footer-texto: $color-cuaternario; //white;
+
+$color-titulos: $color-primario;
+$color-textos: darken($color-titulos, 15%);
+
+.titulo {
+  color: $color-titulos;
+}
+
+.texto {
+  color: $color-textos;
+}
+
+h1 {
+  font-size: 2.85rem !important;
+}
+
+h2 {
+  font-size: 2rem !important;
+}
+
+h3 {
+  font-size: 1.65rem !important;
+}
+
+h4 {
+  font-size: 1.45rem !important;
+}
+
+p {
+  font-size: 1.15rem !important;
+}
+
+$mobile-h1-font-size: 1.8rem !important;
+$mobile-h2-font-size: 1.8rem !important;
+$mobile-h3-font-size: 1.5rem !important;
+$mobile-h4-font-size: 1.25rem !important;
+$mobile-p-font-size: 1rem !important;
+@media (max-width: 600px) {
+  h1 {
+    font-size: $mobile-h1-font-size;
+  }
+  h2 {
+    font-size: $mobile-h2-font-size;
+  }
+  h3 {
+    font-size: $mobile-h3-font-size;
+  }
+  h4 {
+    font-size: $mobile-h4-font-size;
+  }
+  p {
+    font-size: $mobile-p-font-size;
+  }
+}
+
+body {
+  background-color: #000;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+
+  .navbar-fixed {
+    position: relative;
+    height: 63px;
+    z-index: 998;
+
+    nav {
+      background-color: $header;
+      box-shadow: none;
+      a.brand-logo {
+        max-width: 308px;
+        height: auto;
+        img.img-logo {
+          max-height: 60px;
+        }
+      }
+      ul {
+        li {
+          a {
+            color: $header-texto;
+            &:hover {
+              color: $header-texto-hover;
+            }
+          }
+        }
+      }
+      .sidenav-trigger {
+        color: $header-texto !important;
+        float: right;
+      }
+      .sidenav {
+        background-color: $color-primario !important;
+      }
+    }
+  }
+
+  main {
+    flex: 1 0 auto;
+  }
+
+  .page-footer {
+    background-color: $footer !important;
+    color: $footer-texto !important;
+    .container {
+      .row {
+        .center {
+          ul {
+            li {
+              p {
+                color: $footer-texto !important;
+                margin-top: 5px;
+                margin-bottom: 5px;
+                a {
+                  color: darken($footer-texto, 15%) !important;
+                }
+              }
+            }
+          }
+          .links-contacto {
+            height: 85%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+            ul {
+              margin: 0px;
+              li {
+                display: inline-block;
+                height: 40px;
+                width: 100px;
+                position: relative;
+                overflow: hidden;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .footer-copyright {
+      background-color: darken($footer, 15%) !important;
+      color: $footer-texto !important;
+      div {
+        a {
+          color: darken($footer-texto, 15%) !important;
+        }
+      }
+    }
+  }
+}
