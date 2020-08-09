@@ -216,6 +216,12 @@ body main .articulos-destaque .articulos-destaque-grid .articulo-destacado .text
   margin: auto;
 }
 
+body main .articulos-destaque .articulos-destaque-grid .articulo-destacado .texto-articulo-destacado .titulo {
+  font-weight: bold;
+  font-size: 3.25rem !important;
+  font-variant: small-caps;
+}
+
 body main .articulos-destaque .articulos-destaque-grid .articulo-destacado .img-articulo-destacado {
   width: 45%;
   margin: auto;

@@ -212,6 +212,12 @@ body {
           .texto-articulo-destacado {
             width: 45%;
             margin: auto;
+
+            .titulo {
+              font-weight: bold;
+              font-size: 3.25rem !important;
+              font-variant: small-caps;
+            }
           }
           .img-articulo-destacado {
             width: 45%;
