@@ -7,11 +7,11 @@ $(document).ready(function () {
     /*Cambia el color del div cuando es distinto a 0*/
     if (scroll != 0) {
       $("#nav-bar").css({
-        background: "rgba(0, 0, 0, 0.90)",
+        background: "rgba(255, 255, 255, 0.90)",
       });
     } else {
       $("#nav-bar").css({
-        background: "transparent",
+        background: "white",
       });
     }
   });
