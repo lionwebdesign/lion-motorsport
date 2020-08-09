@@ -78,7 +78,7 @@ body .navbar-fixed nav a.brand-logo img.img-logo {
 }
 
 body .navbar-fixed nav ul li a {
-  color: #4b331e;
+  color: #323232;
 }
 
 body .navbar-fixed nav ul li a:hover {
@@ -87,12 +87,12 @@ body .navbar-fixed nav ul li a:hover {
 }
 
 body .navbar-fixed nav .sidenav-trigger {
-  color: #4b331e !important;
+  color: #323232 !important;
   float: right;
 }
 
 body .navbar-fixed nav .sidenav {
-  background-color: #323232 !important;
+  background-color: #f1f1f1 !important;
 }
 
 body .entrada-principal {
@@ -166,7 +166,7 @@ body main .nuevos-articulos .articulos-grid .card-articulo .card .card-image img
     margin: auto;
   }
   body main .nuevos-articulos .articulos-grid .card-articulo .card .card-image {
-    height: 350px;
+    height: 275px;
     width: auto;
   }
   body main .nuevos-articulos .articulos-grid .card-articulo .card .card-image img {

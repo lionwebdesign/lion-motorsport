@@ -8,7 +8,7 @@ $color-sexteario: #f1f1f1;
 //caracteristicas del header
 
 $header: white; // Color del header al cargar la pagina
-$header-texto: $color-secundario; //Color del texto del header
+$header-texto: $color-primario; //Color del texto del header
 $header-texto-hover: $color-terceario; //darken($header-texto, 15%);
 
 //caracteristicas del footer
@@ -116,7 +116,7 @@ body {
         float: right;
       }
       .sidenav {
-        background-color: $color-primario !important;
+        background-color: $color-sexteario !important;
       }
     }
   }
@@ -150,29 +150,6 @@ body {
     max-width: $larguraMaxTela;
     margin: auto !important;
 
-    // .entrada-principal {
-    //   background-color: $color-terceario;
-    //   display: flex;
-    //   align-items: center;
-    //   height: 250px;
-    //   div.container {
-    //     .titulo {
-    //       color: $color-cuaternario;
-    //       font-weight: 800;
-    //       font-size: 4rem !important;
-    //       // text-decoration: underline;
-    //       span {
-    //         font-size: 0.675em;
-    //         font-weight: normal;
-    //         text-decoration: underline;
-    //       }
-    //     }
-    //     .texto {
-    //       color: $color-quinario;
-    //     }
-    //   }
-    // }
-
     .nuevos-articulos {
       .articulos-grid {
         display: flex;
@@ -198,7 +175,7 @@ body {
             margin: auto;
             .card {
               .card-image {
-                height: 350px;
+                height: 275px;
                 width: auto;
                 img{
                   min-height: -webkit-fill-available;
