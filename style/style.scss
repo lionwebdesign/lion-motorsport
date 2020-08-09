@@ -138,9 +138,15 @@ body {
           font-weight: normal;
           text-decoration: underline;
         }
+        @media screen and (max-width: 600px) {
+          font-size: 2.5rem !important;
+        }
       }
       .texto {
         color: $color-quinario;
+        @media screen and (max-width: 600px) {
+          font-size: 1rem !important;
+        }
       }
     }
   }

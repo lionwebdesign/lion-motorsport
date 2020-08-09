@@ -119,8 +119,20 @@ body .entrada-principal div.container .titulo span {
   text-decoration: underline;
 }
 
+@media screen and (max-width: 600px) {
+  body .entrada-principal div.container .titulo {
+    font-size: 2.5rem !important;
+  }
+}
+
 body .entrada-principal div.container .texto {
   color: #a4aead;
+}
+
+@media screen and (max-width: 600px) {
+  body .entrada-principal div.container .texto {
+    font-size: 1rem !important;
+  }
 }
 
 body main {
