@@ -45,7 +45,6 @@ p {
 }
 
 body {
-  max-width: 1920px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -54,7 +53,6 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin: auto !important;
 }
 
 body .navbar-fixed {
@@ -80,7 +78,7 @@ body .navbar-fixed nav a.brand-logo img.img-logo {
 }
 
 body .navbar-fixed nav ul li a {
-  color: #4b331e;
+  color: #323232;
 }
 
 body .navbar-fixed nav ul li a:hover {
@@ -89,21 +87,16 @@ body .navbar-fixed nav ul li a:hover {
 }
 
 body .navbar-fixed nav .sidenav-trigger {
-  color: #4b331e !important;
+  color: #323232 !important;
   float: right;
 }
 
 body .navbar-fixed nav .sidenav {
-  background-color: #323232 !important;
+  background-color: #f1f1f1 !important;
 }
 
-body main {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 0 auto;
-          flex: 1 0 auto;
-}
-
-body main .entrada-principal {
+body .entrada-principal {
+  width: 100%;
   background-color: #313f48;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -114,20 +107,28 @@ body main .entrada-principal {
   height: 250px;
 }
 
-body main .entrada-principal div.container .titulo {
+body .entrada-principal div.container .titulo {
   color: #bbbead;
   font-weight: 800;
   font-size: 4rem !important;
 }
 
-body main .entrada-principal div.container .titulo span {
+body .entrada-principal div.container .titulo span {
   font-size: 0.675em;
   font-weight: normal;
   text-decoration: underline;
 }
 
-body main .entrada-principal div.container .texto {
+body .entrada-principal div.container .texto {
   color: #a4aead;
+}
+
+body main {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
+  max-width: 1920px;
+  margin: auto !important;
 }
 
 body main .nuevos-articulos .articulos-grid {

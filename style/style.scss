@@ -1,5 +1,5 @@
-$color-primario: #323232;////Color más oscuro de la paleta
-$color-secundario: #4b331e;//CTA's
+$color-primario: #323232; ////Color más oscuro de la paleta
+$color-secundario: #4b331e; //CTA's
 $color-terceario: #313f48; //Hover
 $color-cuaternario: #bbbead; //Color de resalte sobre fondos oscuros
 $color-quinario: #a4aead; //Titulos en general
@@ -8,7 +8,7 @@ $color-sexteario: #f1f1f1;
 //caracteristicas del header
 
 $header: white; // Color del header al cargar la pagina
-$header-texto: $color-secundario; //Color del texto del header
+$header-texto: $color-primario; //Color del texto del header
 $header-texto-hover: $color-terceario; //darken($header-texto, 15%);
 
 //caracteristicas del footer
@@ -74,11 +74,10 @@ $larguraMaxTela: 1920px;
 
 body {
   //background-color: #000;
-  max-width: $larguraMaxTela;
   display: flex;
   min-height: 100vh;
   flex-direction: column;
-  margin: auto !important;
+  //margin: auto !important;
 
   .navbar-fixed {
     position: relative;
@@ -116,36 +115,39 @@ body {
         float: right;
       }
       .sidenav {
-        background-color: $color-primario !important;
+        background-color: $color-sexteario !important;
+      }
+    }
+  }
+
+  .entrada-principal {
+    width: 100%;
+    background-color: $color-terceario;
+    display: flex;
+    align-items: center;
+    height: 250px;
+    div.container {
+      .titulo {
+        color: $color-cuaternario;
+        font-weight: 800;
+        font-size: 4rem !important;
+        // text-decoration: underline;
+        span {
+          font-size: 0.675em;
+          font-weight: normal;
+          text-decoration: underline;
+        }
+      }
+      .texto {
+        color: $color-quinario;
       }
     }
   }
 
   main {
     flex: 1 0 auto;
-
-    .entrada-principal {
-      background-color: $color-terceario;
-      display: flex;
-      align-items: center;
-      height: 250px;
-      div.container {
-        .titulo {
-          color: $color-cuaternario;
-          font-weight: 800;
-          font-size: 4rem !important;
-          // text-decoration: underline;
-          span {
-            font-size: 0.675em;
-            font-weight: normal;
-            text-decoration: underline;
-          }
-        }
-        .texto {
-          color: $color-quinario;
-        }
-      }
-    }
+    max-width: $larguraMaxTela;
+    margin: auto !important;
 
     .nuevos-articulos {
       .articulos-grid {
@@ -157,7 +159,7 @@ body {
           margin: auto;
           .card {
             border-radius: 5px;
-            box-shadow: 0 17px 65px 0 rgba(5,24,51,.35);
+            box-shadow: 0 17px 65px 0 rgba(5, 24, 51, 0.35);
             .card-image {
               height: 200px;
               width: auto;
@@ -167,22 +169,21 @@ body {
               }
             }
           }
-          @media screen and (max-width:992px) {
+          @media screen and (max-width: 992px) {
             width: 90%;
             margin: auto;
             .card {
               .card-image {
                 height: 350px;
                 width: auto;
-                img{
+                img {
                   min-height: -webkit-fill-available;
                 }
               }
             }
-            
           }
         }
-        @media screen and (max-width:992px) {
+        @media screen and (max-width: 992px) {
           flex-direction: column;
         }
       }
@@ -193,7 +194,6 @@ body {
       padding-top: 15px;
       .texto-articulos-destaque {
         margin-bottom: 45px;
-      
       }
 
       .articulos-destaque-grid {
@@ -219,7 +219,6 @@ body {
               margin: auto;
             }
           }
-          
         }
       }
     }
