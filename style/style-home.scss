@@ -1,5 +1,5 @@
-$color-primario: #323232;////Color más oscuro de la paleta
-$color-secundario: #4b331e;//CTA's
+$color-primario: #323232; ////Color más oscuro de la paleta
+$color-secundario: #4b331e; //CTA's
 $color-terceario: #313f48; //Hover
 $color-cuaternario: #bbbead; //Color de resalte sobre fondos oscuros
 $color-quinario: #a4aead; //Titulos en general
@@ -166,7 +166,7 @@ body {
           margin: auto;
           .card {
             border-radius: 5px;
-            box-shadow: 0 17px 65px 0 rgba(5,24,51,.35);
+            box-shadow: 0 17px 65px 0 rgba(5, 24, 51, 0.35);
             .card-image {
               height: 200px;
               width: auto;
@@ -176,22 +176,21 @@ body {
               }
             }
           }
-          @media screen and (max-width:992px) {
+          @media screen and (max-width: 992px) {
             width: 90%;
             margin: auto;
             .card {
               .card-image {
                 height: 275px;
                 width: auto;
-                img{
+                img {
                   min-height: -webkit-fill-available;
                 }
               }
             }
-            
           }
         }
-        @media screen and (max-width:992px) {
+        @media screen and (max-width: 992px) {
           flex-direction: column;
         }
       }
@@ -202,7 +201,6 @@ body {
       padding-top: 15px;
       .texto-articulos-destaque {
         margin-bottom: 45px;
-      
       }
 
       .articulos-destaque-grid {
@@ -234,7 +232,6 @@ body {
               margin: auto;
             }
           }
-          
         }
       }
     }
@@ -246,19 +243,28 @@ body {
     .container {
       .row {
         .center {
-          ul {
-            li {
-              p {
-                color: $footer-texto !important;
-                margin-top: 5px;
-                margin-bottom: 5px;
-                a {
-                  color: darken($footer-texto, 15%) !important;
+          display: flex;
+          align-items: center;
+          .contactanos {
+            width: 50%;
+            ul {
+              li {
+                p {
+                  color: $footer-texto !important;
+                  margin-top: 5px;
+                  margin-bottom: 5px;
+                  a {
+                    color: darken($footer-texto, 15%) !important;
+                    &:hover {
+                      color: lighten($footer-texto, 15%) !important;
+                    }
+                  }
                 }
               }
             }
           }
           .links-contacto {
+            width: 50%;
             height: 85%;
             display: flex;
             flex-direction: column;
@@ -272,8 +278,18 @@ body {
                 width: 100px;
                 position: relative;
                 overflow: hidden;
+                a {
+                  font-size: 1.2rem;
+                  color: darken($footer-texto, 15%) !important;
+                  &:hover {
+                    color: lighten($footer-texto, 15%) !important;
+                  }
+                }
               }
             }
+          }
+          @media screen and (max-width: 992px) {
+            flex-direction: column;
           }
         }
       }
