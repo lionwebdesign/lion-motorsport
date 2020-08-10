@@ -1,1 +1,58 @@
-/* No CSS *//*# sourceMappingURL=style-la-primera-busqueda.css.map */
+main {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  width: 100%;
+}
+
+main article {
+  width: 70%;
+}
+
+main article .titulo-articulo .titulo {
+  font-weight: bold;
+  font-size: 3.25rem !important;
+  font-variant: small-caps;
+}
+
+main article .imagen-principal {
+  width: 85%;
+  margin: auto;
+  margin-top: 50px;
+}
+
+main article .imagen-principal img {
+  width: 100%;
+  height: auto;
+}
+
+main article .contenido-articulo {
+  width: 90%;
+  margin: auto;
+}
+
+main .info-autor {
+  width: 30%;
+}
+
+@media screen and (max-width: 992px) {
+  main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+  }
+  main article.articulo {
+    width: 100%;
+  }
+  main article.articulo .titulo-articulo .titulo {
+    font-weight: bold;
+    font-size: 2.25rem !important;
+    font-variant: small-caps;
+  }
+  main .info-autor {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=style-la-primera-busqueda.css.map */

@@ -1,0 +1,53 @@
+main {
+    display: flex !important;
+    width: 100%;
+
+    article {
+        width: 70%;
+        .titulo-articulo {
+            .titulo {
+                font-weight: bold;
+                font-size: 3.25rem !important;
+                font-variant: small-caps;
+            }
+        }
+        .imagen-principal {
+            width: 85%;
+            margin: auto;
+            margin-top: 50px;
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+        .contenido-articulo {
+            width: 90%;
+            margin: auto;
+        }
+    }
+
+    .info-autor {
+        width: 30%;
+    }
+
+    @media screen and (max-width: 992px) {
+        flex-direction: column;
+        width: 100%;
+
+        article.articulo {
+            width: 100%;
+            .titulo-articulo {
+                .titulo {
+                    font-weight: bold;
+                    font-size: 2.25rem !important;
+                    font-variant: small-caps;
+                }
+            }
+        }
+    
+        .info-autor {
+            width: 100%;
+        }
+
+    }
+}
