@@ -143,6 +143,18 @@ body main {
   margin: auto !important;
 }
 
+body main .nuevos-articulos .texto-nuevos-articulos .titulo {
+  font-weight: bold;
+  font-size: 3.25rem !important;
+  font-variant: small-caps;
+}
+
+@media screen and (max-width: 600px) {
+  body main .nuevos-articulos .texto-nuevos-articulos .titulo {
+    font-size: 2rem !important;
+  }
+}
+
 body main .nuevos-articulos .articulos-grid {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -225,6 +237,10 @@ body main .articulos-destaque .articulos-destaque-grid .articulo-destacado .text
 body main .articulos-destaque .articulos-destaque-grid .articulo-destacado .img-articulo-destacado {
   width: 45%;
   margin: auto;
+}
+
+body main .articulos-destaque .articulos-destaque-grid .articulo-destacado .img-articulo-destacado img {
+  border-radius: 2px;
 }
 
 @media screen and (max-width: 992px) {

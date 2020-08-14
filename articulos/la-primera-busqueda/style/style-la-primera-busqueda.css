@@ -29,6 +29,16 @@ main article .imagen-principal img {
   border-radius: 2px;
 }
 
+main article .imagen-principal div.video-container {
+  -webkit-box-shadow: 0 10px 30px 0 rgba(5, 24, 51, 0.35);
+          box-shadow: 0 10px 30px 0 rgba(5, 24, 51, 0.35);
+}
+
+main article .imagen-principal div.video-container iframe {
+  -webkit-box-shadow: 0 10px 30px 0 rgba(5, 24, 51, 0.35);
+          box-shadow: 0 10px 30px 0 rgba(5, 24, 51, 0.35);
+}
+
 main article .contenido-articulo {
   width: 90%;
   margin: auto;
@@ -71,7 +81,7 @@ main article .divididos .imagen-y-texto {
 
 main .info-autor {
   width: 30%;
-  background-color: rgba(5, 24, 51, 0.35);
+  background-color: #f1f1f1;
 }
 
 main .info-autor div.container {
@@ -87,6 +97,11 @@ main .info-autor div.container img {
   height: auto;
   margin: auto;
   border-radius: 50%;
+}
+
+main .info-autor div.container .titulo {
+  font-weight: bold;
+  font-variant: small-caps;
 }
 
 @media screen and (max-width: 992px) {

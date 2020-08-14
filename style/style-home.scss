@@ -157,6 +157,16 @@ body {
     margin: auto !important;
 
     .nuevos-articulos {
+      .texto-nuevos-articulos {
+        .titulo {
+          font-weight: bold;
+          font-size: 3.25rem !important;
+          font-variant: small-caps;
+          @media screen and (max-width: 600px) {
+            font-size: 2rem !important;
+          }
+        }
+      }
       .articulos-grid {
         display: flex;
         width: 85%;
@@ -220,6 +230,9 @@ body {
           .img-articulo-destacado {
             width: 45%;
             margin: auto;
+            img {
+              border-radius: 2px;
+            }
           }
           @media screen and (max-width: 992px) {
             flex-direction: column;
