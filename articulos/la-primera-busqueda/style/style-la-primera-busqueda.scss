@@ -80,6 +80,17 @@ main {
         font-weight: bold;
         font-variant: small-caps;
       }
+      p {
+        font-size: 0.95rem !important;
+        span {
+          text-decoration: none;
+          font-size: 0.95rem;
+          s {
+            text-decoration: underline;
+            font-size: 0.80rem;
+          }
+        }
+      }
     }
   }
 
