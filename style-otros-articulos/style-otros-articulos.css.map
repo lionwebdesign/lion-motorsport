@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AACI,IADA,CACA,EAAE,AAAA,OAAO,CAAC;EACN,WAAW,EAAE,GAAG;EAChB,SAAS,EAAE,eAAe;EAC1B,YAAY,EAAE,UAAU;CAC3B",
+    "sources": [
+        "style-otros-articulos.scss"
+    ],
+    "names": [],
+    "file": "style-otros-articulos.css"
+}

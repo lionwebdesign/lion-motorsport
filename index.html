@@ -1,18 +1,19 @@
--<!DOCTYPE html>
-<html lang="es">
+<!DOCTYPE html>
+<html lang="pt">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Lionmotorsport | Lionwedesign</title>
-  <!-- Estilo -->
-  <link rel="stylesheet" href="./style/style.css">
+  <!-- Estilo general -->
+  <link rel="stylesheet" href="./style-home/style-home.css">
   <!-- Compiled and minified CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
   <!-- Material Icons -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
   <!-- Awesome fonts -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="shortcut icon" href="./media/favicon-2.png" type="image/x-icon">
 
 </head>
 
@@ -22,7 +23,7 @@
       <div class="nav-wrapper container">
         <!-- <div class="brand-logo"> -->
         <a class="brand-logo" id="" href="#" class="brand-logo">
-          <img src="./media/Logo Principal (1).png" class="img-logo responsive-img" id="header-img" />
+          <img src="./media/logo-principal.png" class="img-logo responsive-img" id="header-img" />
         </a>
 
         <!-- </div> -->
@@ -30,26 +31,48 @@
         <!-- ---Desktop navbar--- -->
         <ul class="right hide-on-med-and-down">
           <li>
-            <a class="boton-menu" href="./index.html">Inicio</a>
+            <a class="boton-menu" href="./index.html">Home</a>
           </li>
           <li>
-            <a class="boton-menu" href="#mis-proyectos">Otros Articulos</a>
+            <!-- Dropdown Trigger -->
+            <a class='dropdown-trigger' href='#' data-target='dropdown1'>Produtos</a>
+
+            <!-- Dropdown Structure -->
+            <ul id='dropdown1' class='dropdown-content'>
+              <li><a href="./productos.html">Todos os produtos</a></li>
+              <li><a href="#!">Ferramentas</a></li>
+              <li><a href="#!">Peças e Acessórios</a></li>
+            </ul>
           </li>
           <li>
-            <a class="boton-menu" href="#contact-us">Contacto</a>
+            <a class="boton-menu" href="./otros-articulos.html">Outros Artigos</a>
+          </li>
+          <li>
+            <a class="boton-menu" href="#contact-us">Contato</a>
           </li>
         </ul>
 
         <!-- ---Mobile navbar--- -->
         <ul id="nav-mobile" class="sidenav">
           <li>
-            <a href="#">Inicio</a>
+            <a href="./index.html">Home</a>
           </li>
           <li>
-            <a href="#mis-proyectos">Otros Articulos</a>
+            <!-- Dropdown Trigger -->
+            <a class='dropdown-trigger' href='#' data-target='dropdown2'>Produtos</a>
+
+            <!-- Dropdown Structure -->
+            <ul id='dropdown2' class='dropdown-content'>
+              <li><a href="./productos.html">Todos os produtos</a></li>
+              <li><a href="#!">Ferramentas</a></li>
+              <li><a href="#!">Peças e Acessórios</a></li>
+            </ul>
           </li>
           <li>
-            <a href="#contact-us">Contacto</a>
+            <a href="./otros-articulos.html">Outros Artigos</a>
+          </li>
+          <li>
+            <a href="#contact-us">Contato</a>
           </li>
         </ul>
         <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
@@ -57,24 +80,23 @@
     </nav>
   </header>
 
-  <main>
-
   <section class="row entrada-principal">
     <div class="container center">
-      <h1 class="titulo">LION<span>MOTORSPORT</span></h1>
-      <h4 class="texto">Pasión por los motores</h4>
+      <h1 class="titulo">Expresa<span>MOTOR'S BLOG</span></h1>
+      <h4 class="texto">Paixão pelos motores</h4>
     </div>
   </section>
 
-  
-    <section class="row publicidad">
-      <div class="container"></div>
-    </section>
+  <section class="row publicidad">
+    <div class="container"></div>
+  </section>
+
+  <main>
 
     <section class="row nuevos-articulos">
 
       <div class="container center texto-nuevos-articulos">
-        <h2 class="titulo">Nuevos articulos</h2>
+        <h2 class="titulo">Novos artigos</h2>
       </div>
 
       <div class="articulos-grid container">
@@ -82,18 +104,17 @@
         <div class="card-articulo col s12 m4 l4">
           <div class="card">
             <div class="card-image waves-effect waves-block waves-light">
-              <img class="activator"
-                src="./media/Shinichiro_Sakurai_and_his_boss_Takuya_Himura_circa_1954_at_Prince_Motor_Copany_Mitaka_Plant_in_Mitaka,_Tokyo,_Japan.jpg">
+              <img class="activator" src="./media/articulo destacado.png">
             </div>
             <div class="card-content">
-              <span class="card-title activator grey-text text-darken-4">Tribute Page<i
+              <span class="card-title activator grey-text text-darken-4">Como começou tudo<i
                   class="material-icons right">more_vert</i></span>
-              <p><a href="https://lionwebdesign.github.io/Tribute-Page/" target="_blanck">Read more</a></p>
+              <p><a href="./articulos/la-primera-busqueda.html">Ler mais</a></p>
             </div>
             <div class="card-reveal">
-              <span class="card-title grey-text text-darken-4">Tribute Page<i
+              <span class="card-title grey-text text-darken-4">A primeira procura<i
                   class="material-icons right">close</i></span>
-              <p>First exercise to obtain the Responsive Web Design certification by FreeCodeCamp</p>
+              <p>Cómo surgio a ideia de iniciar um blog e expresar um lado da paixão pelo motociclismo</p>
             </div>
           </div>
         </div>
@@ -101,17 +122,17 @@
         <div class="card-articulo col s12 m4 l4">
           <div class="card">
             <div class="card-image waves-effect waves-block waves-light">
-              <img class="activator" src="./media/chart-close-up-data-desk-590022.jpg">
+              <img class="activator" src="./media/set-of-tool-wrench-162553.jpg">
             </div>
             <div class="card-content">
-              <span class="card-title activator grey-text text-darken-4">Survey Form<i
+              <span class="card-title activator grey-text text-darken-4">Ferramentas<i
                   class="material-icons right">more_vert</i></span>
-              <p><a href="https://lionwebdesign.github.io/survey-form/" target="_blanck">See the proyect</a></p>
+              <p><a href="#">Ler mais</a></p>
             </div>
             <div class="card-reveal">
-              <span class="card-title grey-text text-darken-4">Survey Form<i
+              <span class="card-title grey-text text-darken-4">Que ferramentas utilizar<i
                   class="material-icons right">close</i></span>
-              <p>Second exercise to obtain the Responsive Web Design by FreeCodeCamp certification</p>
+              <p>Proximamente</p>
             </div>
           </div>
         </div>
@@ -122,14 +143,14 @@
               <img class="activator" src="./media/cafe-racer-frame-garage-making-1599.jpg">
             </div>
             <div class="card-content">
-              <span class="card-title activator grey-text text-darken-4">Landing Page<i
+              <span class="card-title activator grey-text text-darken-4">Como começar<i
                   class="material-icons right">more_vert</i></span>
-              <p><a href="https://lionwebdesign.github.io/landing-page/" target="_blanck">See more</a></p>
+              <p><a href="#">Ler mais</a></p>
             </div>
             <div class="card-reveal">
-              <span class="card-title grey-text text-darken-4">Landing Page<i
+              <span class="card-title grey-text text-darken-4">A base ideal<i
                   class="material-icons right">close</i></span>
-              <p>Third exercise to obtain the Responsive Web Design certification by FreeCodeCamp</p>
+              <p>Proximamente</p>
             </div>
           </div>
         </div>
@@ -137,63 +158,67 @@
     </section>
 
     <section class="row articulos-destaque">
-      <div class="texto-articulos-destaque container center">
-        <h2 class="titulo">Pellentesque et odio maximus</h2>
-        <h4 class="texto">Etiam varius metus lacus, nec feugiat turpis ornare ut</h4>
-      </div>
+
+      <!-- <div class="texto-articulos-destaque container center">
+          <h2 class="titulo">Articulos destacados</h2>
+          <h4 class="texto">Etiam varius metus lacus, nec feugiat turpis ornare ut</h4>
+        </div> -->
+
       <div class="articulos-destaque-grid">
 
         <div class="articulo-destacado">
           <div class="texto-articulo-destacado">
-            <h4 class="titulo">Lorem ipsum dolor sit amet</h4>
-            <p class="texto">In varius ex ut risus facilisis, sed dictum enim imperdiet. Nam vitae libero porta,
-              pharetra risus at, vulputate odio</p>
+            <h4 class="titulo">A primeira procura</h4>
+            <p class="texto">Cómo surgio a ideia de iniciar um blog e expresar um lado da paixão pelo motociclismo... <a
+                href="./articulos/la-primera-busqueda.html">Ler mais</a></p>
           </div>
           <div class="img-articulo-destacado">
-            <img class="responsive-img" src="./media/cafe-racer-frame-garage-making-1599.jpg" alt="">
+            <img class="responsive-img materialboxed" src="./media/articulo destacado.png" alt="">
           </div>
         </div>
 
-        <div class="articulo-destacado">
+        <!-- <div class="articulo-destacado">
           <div class="img-articulo-destacado hide-on-med-and-down">
             <img class="responsive-img" src="./media/cafe-racer-frame-garage-making-1599.jpg" alt="">
           </div>
           <div class="texto-articulo-destacado">
             <h4 class="titulo">Nam scelerisque, velit vitae facilisis elementum</h4>
             <p class="texto">Aliquam aliquet, risus vitae molestie gravida, turpis tortor consectetur turpis, vitae
-              blandit dui libero non mauris.</p>
+              blandit dui libero non mauris... <a href="">Leer más</a></p>
           </div>
           <div class="img-articulo-destacado hide-on-large-only">
             <img class="responsive-img" src="./media/cafe-racer-frame-garage-making-1599.jpg" alt="">
           </div>
-        </div>
+        </div> -->
       </div>
-    </section>
-
-    <section class="row publicidad">
-      <div class="container"></div>
     </section>
 
   </main>
 
+  <section class="row publicidad">
+    <div class="container"></div>
+  </section>
+
   <footer class="page-footer teal">
     <div class="container">
-      <div class="row">
+      <div class="row" id="contact-us">
         <div class="center">
-          <h4 class="">Contact</h4>
-          <ul>
-            <li>
-              <p>contato.lionwedesign@gmail.com | <a href="https://wa.me/5541998324959?text=Ol%C3%A1!"
-                  target="_blanck">(41) 9 9832-4959</a></p>
-            </li>
-          </ul>
-          <div class="container center links-contacto">
+          <div class="contactanos">
+            <h4 class="">Você tem interesse em publicar um artigo?</h4>
+            <p>Entre em contato!</p>
             <ul>
-              <li><a id="profile-link" href="https://github.com/lionwebdesign/" target="_blank"
-                  class=" contact-details"><i class="fa fa-github"></i> GitHub</a></li>
-              <li><a id="profile-link" href="https://www.linkedin.com/in/ruben-villalvazo-065528185" target="_blank"
-                  class=" contact-details"><i class="fa fa-linkedin"></i> Linkedin</a>
+              <li>
+                <p><a href="mailto:contacto.lionwebdesign@gmail.com">contato.lionwebdesign@gmail.com</a> | <a
+                    href="https://wa.me/5541998324959?text=Ol%C3%A1!" target="_blanck">(41) 9 9832-4959</a></p>
               </li>
+            </ul>
+          </div>
+          <div class="container center links-contacto">
+            <!-- <h4 class="">No te pierdas nuestras novedades</h4> -->
+            <p>Não perca as nossas novedades. Nos sigua!</p>
+            <ul>
+              <li><a id="profile-link" href="https://www.instagram.com/expresa.mb/" target="_blank"
+                  class=" contact-details"><i class="fa fa-instagram"></i> Instagram</a></li>
             </ul>
           </div>
         </div>
@@ -212,7 +237,7 @@
   <!-- Compiled and minified JavaScript -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
   <!-- js  -->
-  <script src="./js/js.js"></script>
+  <script src="./js/js-home.js"></script>
   <!-- Google AdSense -->
   <script data-ad-client="ca-pub-8353996584209904" async
     src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
